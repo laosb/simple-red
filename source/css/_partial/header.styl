@@ -1,0 +1,103 @@
+#header
+  height: banner-height
+  position: relative
+  border-bottom: 2px solid color-border
+  border-top: 4px solid color-red
+
+#header-outer
+  height: 100%
+  position: relative
+
+#header-inner
+  position: relative
+  overflow: hidden
+
+#header-title
+  text-align: right
+  height: logo-size
+  position: absolute
+  top: 26%
+  left: 0
+  margin-top: logo-size * -0.5
+
+#subtitle
+  background-color: #fff
+  padding: 10px 10px
+    
+$logo-text
+  text-decoration: none
+  color: color-sidebar-text
+  
+#logo
+  @extend $logo-text
+  font-size: logo-size
+  line-height: subtitle-height
+  margin-left: 22px 
+
+#subtitle
+  @extend $logo-text
+  font-size: subtitle-size
+  line-height: subtitle-size
+  color: color-red
+  letter-spacing: 1px
+
+#subtitle-wrap
+  margin-top: subtitle-size
+
+#main-nav
+  float: left
+  margin-left: 16px
+
+$nav-link
+  float: left
+  color: color-default
+  text-decoration: none
+  display: block
+  padding: 4px 4px
+  margin-top: 16px
+  &:hover
+    color: color-red
+    border-radius: 2px
+    border: 1px solid color-red
+
+.main-nav-link
+  @extend $nav-link
+  @media mq-mobile
+    display: none
+
+#main-nav-toggle
+  display: none
+  &:before
+    content: "\f0c9"
+  @media mq-mobile
+    display: block
+
+#sub-nav
+  float: right
+  margin-right: 15px
+
+#search-form-wrap
+  position: absolute
+  top: 15px
+  width: 150px
+  height: 30px
+  right: -150px
+  opacity: 0
+  transition: 0.2s ease-out
+  &.on
+    opacity: 1
+    right: 0
+  @media mq-mobile
+    width: 100%
+    right: -100%
+
+#search
+  position: relative
+  z-index: 999
+  background-color: #fff
+  border: solid 1px #969696
+  display: block
+  float: right
+  padding: 8px 18px
+  margin-top: 16px
+  color: #000

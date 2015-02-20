@@ -1,0 +1,29 @@
+<header id="header">
+  <div id="header-outer" class="outer">
+<div id="header-subtitle">
+       <div id="header-title" class="inner">
+      <% if (theme.subtitle){ %>
+        <h2 id="subtitle-wrap">
+          <a href="<%- url_for() %>" id="subtitle"><%= theme.subtitle %></a>
+        </h2>
+      <% } %>
+    </div>
+    <div id="header-inner" class="inner">
+        <h1 id="logo-wrap">
+        <a href="<%- url_for() %>" id="logo"><%= config.title %></a>
+      </h1>
+        <nav id="sub-nav">
+        <form class="search" action="//bing.com/search" method="get" accept-charset="utf-8">
+ <input type="search" name="q" id="search" autocomplete="off" autocorrect="off" autocapitalize="off" maxlength="20" placeholder="Search" />
+ <input type="hidden" name="q" value="site:<%- config.url.replace(/^https?:\/\//, '') %>">
+      </nav>
+      <nav id="main-nav">
+        <% for (var i in theme.menu){ %>
+          <a class="main-nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
+        <% } %>
+      </nav>
+      <div id="search-form-wrap">
+      </div>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,32 @@
+#sidebar
+  @media mq-normal
+    column(sidebar-column)
+
+.widget-wrap
+  margin: block-margin 0
+
+.widget-title
+  @extend $block-caption
+
+.widget
+  border: 1px solid color-border
+  border-radius: 1px
+  padding: 14px
+  a
+    color: color-red
+    text-decoration: none
+    border-radius: 1px
+    padding: 0.5px 1.5px
+    line-height: 1.5em
+    border: 1px solid color-red
+    
+    &:hover
+      color: #fff
+      transition: 0.2s
+      text-decoration: none
+      background: color-red
+      
+  ul, ol, dl
+    ul, ol, dl
+      margin-left: 15px
+      list-style: disc
