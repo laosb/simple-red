@@ -1,111 +1,31 @@
-# Landscape
+# Simple RED
 
-A brand new default theme for [Hexo].
+本主题已经针对大陆不可抗拒的一些因素作出调整
 
-- [Preview](http://hexo.io/hexo-theme-landscape/)
-
-## Installation
-
-### Install
+### 主题安装
 
 ``` bash
-$ git clone https://github.com/hexojs/hexo-theme-landscape.git themes/landscape
+$ git clone https://github.com/AddamsNode/simple-red.git themes/simplered
 ```
 
-**Landscape requires Hexo 2.4 and above.**
+**Simple RED requires Hexo 2.4 and above.**
 
-### Enable
+### 主题启用
 
-Modify `theme` setting in `_config.yml` to `landscape`.
+请修改主题的设置文件_config.yml，把theme的值设置为simplered
 
-### Update
+### 更新主题
 
 ``` bash
-cd themes/landscape
+cd themes/simplered
 git pull
 ```
 
-## Configuration
+## 更新日志
 
-``` yml
-# Header
-menu:
-  Home: /
-  Archives: /archives
-rss: /atom.xml
-
-# Content
-excerpt_link: Read More
-fancybox: true
-
-# Sidebar
-sidebar: right
-widgets:
-- category
-- tag
-- tagcloud
-- archives
-- recent_posts
-
-# Miscellaneous
-google_analytics:
-favicon: /favicon.png
-twitter:
-google_plus:
-```
-
-- **menu** - Navigation menu
-- **rss** - RSS link
-- **excerpt_link** - "Read More" link at the bottom of excerpted articles. `false` to hide the link.
-- **fancybox** - Enable [Fancybox]
-- **sidebar** - Sidebar style. You can choose `left`, `right`, `bottom` or `false`.
-- **widgets** - Widgets displaying in sidebar
-- **google_analytics** - Google Analytics ID
-- **favicon** - Favicon path
-- **twitter** - Twiiter ID
-- **google_plus** - Google+ ID
-
-## Features
-
-### Fancybox
-
-Landscape uses [Fancybox] to showcase your photos. You can use Markdown syntax or fancybox tag plugin to add your photos.
-
-```
-![img caption](img url)
-
-{% fancybox img_url [img_thumbnail] [img_caption] %}
-```
-
-### Sidebar
-
-You can put your sidebar in left side, right side or bottom of your site by editing `sidebar` setting.
-
-Landscape provides 5 built-in widgets:
-
-- category
-- tag
-- tagcloud
-- archives
-- recent_posts
-
-All of them are enabled by default. You can edit them in `widget` setting.
-
-## Development
-
-### Requirements
-
-- [Grunt] 0.4+
-- Hexo 2.4+
-
-### Grunt tasks
-
-- **default** - Download [Fancybox] and [Font Awesome].
-- **fontawesome** - Only download [Font Awesome].
-- **fancybox** - Only download [Fancybox].
-- **clean** - Clean temporarily files and downloaded files.
-
-[Hexo]: http://zespia.tw/hexo/
-[Fancybox]: http://fancyapps.com/fancybox/
-[Font Awesome]: http://fontawesome.io/
-[Grunt]: http://gruntjs.com/
+＃V0.1 
+> - 主题正式发布
+> - 修改谷歌字库，为360字库（又过敏症的人，我也是迫不得已有更好的字库欢迎告诉我）
+> - 去除Google API
+> - 恍然一新的UI
+> - 适度精简
